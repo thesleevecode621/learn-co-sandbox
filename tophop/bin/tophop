@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+
+require './lib/tophop/tophop'
+Cli.new.call
+
