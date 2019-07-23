@@ -1,6 +1,6 @@
 
 class Hospital
-  attr_accessor :name,:ranking,:doctor,:pnumber,:description
+  attr_accessor :name,:ranking,:doctor,:pnumber,:description,:name_rank
   @@all = []
  # def initialize(name)
    # @name = name 
