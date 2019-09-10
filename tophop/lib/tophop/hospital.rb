@@ -1,15 +1,8 @@
 
 class Hospital
-  attr_accessor :name,:ranking,:doctor,:pnumber,:description,:des
+  attr_accessor :name,:ranking,:description
   @@all = []
-  #def initialize(name)
- #  @name = name 
-   # @ranking = ranking
-   # @pnumber = pnumber
-   # @description = description
-   # save
- # end 
-   
+  
     def self.all
       @@all
     end 

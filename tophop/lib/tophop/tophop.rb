@@ -9,5 +9,5 @@ require "openssl"
 
 require_relative "./cli"
 require_relative "./scraper"
-require_relative "./doctor"
+#require_relative "./doctor"
 require_relative "./hospital"
