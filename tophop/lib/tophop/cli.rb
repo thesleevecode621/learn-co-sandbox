@@ -11,15 +11,12 @@ end
 def list_hospitals
   
 @ranking = Hospital.all.each.with_index(1) do |hospital,i|
-   puts "#{i}: #{ hospital.name}"
-   
+   puts "|#{i}: #{ hospital.name}|"
+  puts "<--------------------------------------->"
 end
 puts "find out more about the Hospital by seleting a number :"
 end    
-#def find_hospital(ranking)
- #  Hospital.all.detect{ |s| s.ranking == ranking
-   #return "#{s.description}" }
-  #end
+
 def info 
     input = nil
    
@@ -27,7 +24,11 @@ def info
   input = gets.strip
       if input.to_i > 0 && input.to_i < 21
         the_ranking = @ranking[input.to_i-1]
+        puts "---------------------------------------"
         puts "#{the_ranking.name}  - #{the_ranking.description}"
+        puts "---------------------------------------"
+        puts "to return to list just simply type list 
+        or if your done type exit "
       elsif input == "list"
         list_hospitals
         
