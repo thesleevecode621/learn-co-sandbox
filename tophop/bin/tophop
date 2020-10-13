@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
 
-require './lib/tophop/tophop'
+require_relative '../lib/tophop/tophop'
 Cli.new.call
 
